@@ -1,0 +1,112 @@
+/* Reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'MaPolicePerso';
+  src: url('src/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+body {
+  font-family: 'MaPolicePerso', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  min-height: 100vh;
+
+  margin-left: 18vw; /* place pour la navbar */
+  padding: 2vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #ff4e50, #f9d423);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #002147;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.4);
+  text-align: justify;
+
+  overflow-x: hidden; /* empêche le scroll horizontal */
+}
+
+section {
+  width: 95%;
+  max-width: 1200px;
+  margin: 2rem auto; /* centre horizontalement */
+  padding: 2rem;
+
+  background: linear-gradient(135deg, rgba(255, 241, 118, 0.85), rgba(255, 255, 255, 0.25));
+  border: 2px solid #fff176;
+  box-shadow: 0 0 30px 5px rgba(255, 241, 118, 0.7);
+  transition: box-shadow 0.3s ease;
+
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #fff176;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-left: 0; /* plus de marge à gauche sur tel */
+    padding: 4vw;
+  }
+
+  section {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.5rem;
+    margin: 1rem 0;
+
+    border: 2px solid #fff176; /* garde la bordure */
+    box-shadow: 0 0 30px 5px rgba(255, 241, 118, 0.7); /* garde l’ombre */
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  p, a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin-left: 0;
+    padding: 5vw;
+  }
+
+  section {
+    margin: 0.8rem 0;
+
+    border: 2px solid #fff176; /* garde la bordure même au plus petit */
+    box-shadow: 0 0 30px 5px rgba(255, 241, 118, 0.7);
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  p, a {
+    font-size: 0.95rem;
+  }
+}

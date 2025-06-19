@@ -1,0 +1,55 @@
+.competences-section {
+  padding: 2rem;
+}
+
+.competences-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skill-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.skill-name {
+  min-width: 100px;
+  font-weight: bold;
+}
+
+.skill-stars {
+  display: flex;
+  gap: 0.2rem;
+  min-width: 80px;
+}
+
+.star-active {
+  color: gold;
+}
+
+.star-inactive {
+  color: #ccc;
+}
+
+.skill-justification {
+  flex: 1;
+  min-width: 200px;
+  font-size: 0.95rem;
+}
+
+.skill-link {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: bold;
+}

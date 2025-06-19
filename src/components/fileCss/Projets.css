@@ -1,0 +1,45 @@
+.projets-section {
+  padding: 2rem; /* p-8 */
+}
+
+.projets-title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 600;  /* font-semibold */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.projets-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem; /* gap-4 */
+}
+
+@media (min-width: 768px) {
+  .projets-grid {
+    grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
+  }
+}
+
+.projet-card {
+  border: 1px solid #d1d5db; /* border */
+  padding: 1rem;             /* p-4 */
+  border-radius: 0.5rem;     /* rounded-lg */
+  transition: background-color 0.2s ease-in-out;
+  text-decoration: none;
+  color: inherit;
+}
+
+.projet-card:hover {
+  background-color: #f3f4f6; /* hover:bg-gray-100 */
+}
+
+.projet-titre {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: bold;
+}
+
+.projet-description {
+  font-size: 0.875rem; /* text-sm */
+  color: #4b5563;      /* text-gray-600 */
+  margin-top: 0.25rem; /* mt-1 */
+}

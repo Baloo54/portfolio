@@ -1,0 +1,14 @@
+.apropos-section {
+  padding: 2rem; /* équivalent à p-8 */
+}
+
+.apropos-title {
+  font-size: 1.5rem; /* équivalent à text-2xl */
+  font-weight: 600;  /* équivalent à font-semibold */
+  margin-bottom: 1rem; /* équivalent à mb-4 */
+}
+
+.apropos-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}

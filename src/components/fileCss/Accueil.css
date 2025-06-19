@@ -1,0 +1,28 @@
+.accueil-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.accueil-title {
+  font-size: 2.25rem; /* équivalent à text-4xl */
+  font-weight: bold;
+}
+
+.accueil-description {
+  margin-top: 1rem; /* équivalent à mt-4 */
+  font-size: 1.125rem; /* équivalent à text-lg */
+}
+.accueil-button {
+  margin-top: 1.5rem; /* équivalent à mt-6 */
+  padding: 0.75rem 1.5rem; /* équivalent à px-6 py-3 */
+  font-size: 1rem; /* équivalent à text-base */
+  font-weight: bold;
+  color: white;
+  background-color: #4a90e2; /* couleur personnalisée */
+  border-radius: 0.375rem; /* équivalent à rounded-md */
+  text-decoration: none;
+}
