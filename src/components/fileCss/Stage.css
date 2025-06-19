@@ -9,18 +9,56 @@
 }
 
 .stage-card {
-  border: 1px solid #d1d5db; /* border */
-  border-radius: 0.5rem;     /* rounded-lg */
+  border: 2px solid #fff176; /* garde la bordure */
+  box-shadow: 0 0 30px 5px rgba(255, 241, 118, 0.7); /* garde l’ombre */
   padding: 1rem;             /* p-4 */
   margin-bottom: 1rem;       /* mb-4 */
+  background-color: #ffffff; /* fond blanc pour mieux voir le contenu */
+}
+
+.stage-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap; /* pour petit écran */
+}
+
+.stage-text {
+  flex: 1 1 auto; /* Prend l’espace restant */
+}
+
+.stage-logo {
+  display: inline-flex; /* la div taille selon l’image */
+  justify-content: flex-end;
+  /* pas de flex-grow/flex-basis */
+}
+
+.stage-logo img {
+  max-height: 100px;  /* limite la hauteur max */
+  width: auto;        /* largeur automatique pour garder ratio */
+  height: auto;
+  max-width: 100%;    /* ne dépasse pas la largeur du conteneur */
+  border-radius: 0.25rem;
+  object-fit: contain;
 }
 
 .stage-entreprise {
-  font-weight: bold; /* font-bold */
+  font-weight: bold;         /* font-bold */
 }
 
 .stage-liste {
-  list-style-type: disc; /* list-disc */
-  padding-left: 1.25rem; /* pl-5 */
-  margin-top: 0.5rem;    /* mt-2 */
+  list-style-type: disc;     /* list-disc */
+  padding-left: 1.25rem;     /* pl-5 */
+  margin-top: 0.5rem;        /* mt-2 */
+}
+
+/* Responsive : sur petits écrans */
+@media (max-width: 600px) {
+  .stage-logo {
+    margin-top: 1rem;         /* espace au dessus quand l'image descend */
+    justify-content: center;  /* centre l'image sous le texte */
+    height: auto;             /* hauteur automatique pour s'adapter */
+    max-height: none;
+  }
 }

@@ -4,7 +4,6 @@ import './fileCss/Navbar.css';
 const sections = [
   {id : 'none', label: 'Comte Gabriel'},
   { id: 'accueil', label: 'Accueil' },
-  { id: 'apropos', label: 'À propos' },
   { id: 'competences', label: 'Compétences' },
   { id: 'stage', label: 'Stages' },
   { id: 'projets', label: 'Projets' }

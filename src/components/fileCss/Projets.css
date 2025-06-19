@@ -21,11 +21,12 @@
 }
 
 .projet-card {
-  border: 1px solid #d1d5db; /* border */
+  border: 2px solid #fff176; /* garde la bordure */
+  box-shadow: 0 0 30px 5px rgba(255, 241, 118, 0.7); /* garde l’ombre */
   padding: 1rem;             /* p-4 */
   border-radius: 0.5rem;     /* rounded-lg */
   transition: background-color 0.2s ease-in-out;
-  text-decoration: none;
+  text-align: center;
   color: inherit;
 }
 
@@ -42,4 +43,28 @@
   font-size: 0.875rem; /* text-sm */
   color: #4b5563;      /* text-gray-600 */
   margin-top: 0.25rem; /* mt-1 */
+}
+
+.projet-technos {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #2563eb; /* bleu vif */
+  font-weight: 600;
+}
+
+.projet-lien {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-weight: 600;
+  color: #007acc;
+  text-decoration: none;
+  border: 1.5px solid #007acc;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.3rem;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.projet-lien:hover {
+  background-color: #007acc;
+  color: white;
 }
