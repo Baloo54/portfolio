@@ -12,7 +12,6 @@ export default function Accueil() {
         Je cherche à approfondir mes connaissances et à relever des défis techniques, notamment autour de la sécurité des systèmes et des réseaux.  
         N’hésitez pas à explorer les différentes sections pour en savoir plus sur mon travail.
       </p>
-       <h1 className="accueil-title">Le portfolio est en cours et sera finis le 20 juin</h1>
       <p className="accueil-invitation">
         Bonne visite et merci de votre intérêt !
       </p>

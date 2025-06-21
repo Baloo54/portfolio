@@ -10,9 +10,11 @@ function SkillRow({ name, rating, justification, repo }) {
         ))}
       </span>
       <span className="skill-justification">{justification}</span>
-      <a href={repo} target="_blank" rel="noopener noreferrer" className="skill-link">
-        Voir Projet
-      </a>
+      {repo && (
+        <a href={repo} target="_blank" rel="noopener noreferrer" className="skill-link">
+          Voir Projet
+        </a>
+      )}
     </div>
   );
 }
@@ -20,22 +22,45 @@ function SkillRow({ name, rating, justification, repo }) {
 export default function Competences() {
   const skills = [
     {
-      name: 'React',
-      rating: 4,
-      justification: 'SPA avec hooks et composants personnalisés.',
-      repo: 'https://github.com/tonrepo/react', 
+      name: 'Développement Web & Frontend',
+      rating: 5,
+      justification: 'Création d’applications React SPA avec composants réutilisables, gestion d’état, hooks et déploiement NGINX.',
+      repo: 'https://github.com/Baloo54/Audio_Collection', // Audio Collection + Portfolio
     },
     {
-      name: 'Node.js',
-      rating: 3,
-      justification: 'loremLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-      repo: 'https://github.com/tonrepo/node',
+      name: 'Backend & API',
+      rating: 4,
+      justification: 'APIs Node.js avec gestion des sessions, intégration PostgreSQL, déploiement Docker Swarm et sécurisation via Docker Secrets.',
+      repo: 'https://github.com/Baloo54/Audio_Collection',
     },
-    // Ajoute plus de compétences ici
+    {
+      name: 'Algorithmique & Programmation Java',
+      rating: 5,
+      justification: 'Implémentation d’algorithmes avancés (plus court chemin), génération automatique de diagrammes UML, jeux 2D en POO.',
+      repo: 'https://github.com/Baloo54/SAE-Exploration-Algorithmique',
+    },
+    {
+      name: 'Administration système & réseau',
+      rating: 4,
+      justification: 'Scripts Bash, gestion de paquets Debian, virtualisation, configuration de serveurs HTTP et reverse proxy NGINX.',
+      repo: 'https://github.com/remi-choffat/S3-03',
+    },
+    {
+      name: 'Sécurité & bonnes pratiques',
+      rating: 4,
+      justification: 'Gestion des accès, VPN, chiffrement SSL, journalisation, protection contre les intrusions, gestion sécurisée des secrets.',
+      repo: 'https://github.com/Baloo54/Audio_Collection',
+    },
+    {
+      name: 'Gestion de projet & communication',
+      rating: 4,
+      justification: 'Méthodes agiles, rédaction technique, simulation de gestion d’entreprise avec prise en compte des critères ESG.',
+      repo: '', // pas forcément lié à un repo spécifique
+    },
   ];
 
   return (
-    <section id='competences' className="competences-section">
+    <section id="competences" className="competences-section">
       <h2 className="competences-title">Mes compétences</h2>
       <div className="skills-container">
         {skills.map((skill) => (
